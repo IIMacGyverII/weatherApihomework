@@ -1,0 +1,59 @@
+:root {
+    
+}
+
+body {
+    
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    /* min-height: 5%;
+    max-height: 10%; */
+    height: 5%;
+    font-size: 24pt;
+    color: white;
+    text-shadow: 2px 2px #000000;
+    justify-content: center;
+    /* margin: -15px; */
+    /* padding-bottom: 40px; */
+    /* background stuff */
+    background: linear-gradient(-45deg, #5788fa, #0202fe, #23a6d5, #1406d5);
+	  /* background stuff; */
+  /* border: solid 2px black; */
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    /* border: solid 2px rgb(238, 13, 13); */
+}
+
+.leftSideBar {
+    /* border: solid 2px black;     */
+    width: 15%;
+    height: 800px;
+}
+
+.selectedCity {
+    border: solid 2px rgb(9, 66, 33);
+    width: 80%;
+    height: 50%;
+    margin: 10px;
+    padding: 5px;
+}
+
+.selectedCityCurrent {
+    /* border: solid 2px black; */
+}
+
+#forecast {
+
+}
+
+.this {
+    border-style: solid;
+    border-color: black;
+}

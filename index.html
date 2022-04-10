@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/css/styles.css" />
+</head>
+<body>
+    <header class="header">
+        <p><b>Weather Dashboard</b></p>
+    </header>
+    <section class="page">        
+        <section class="leftSideBar">
+        <h1>Search for a City:</h1>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+            <div class="input-group-append">
+              <button class="btn btn-success" type="button">Search</button>
+            </div>
+          </div>
+          
+        </section>
+        <section class="selectedCity">
+            <section class="selectedCityCurrent">
+                <p class="currentCityName">Atlanta (3/30/2021)</p>   
+                <p class="currentTemp">Temp: 74.01F</p>
+                <p class="currentWind">Wind: 6.67 MPH</p>
+                <p class="currentHumidity">Humidity: 46%</p>
+                <p class="uvIndex">UV Index: 0.47</p>     
+            </section>
+            <section id="forecast">
+            <h1>5-Day Forecast:</h1>
+            </section>
+        </section>
+    </section>
+<script src="./Assets/js/script.js"></script>
+</body>
+</html>
