@@ -38,19 +38,85 @@ body {
 }
 
 .selectedCity {
-    border: solid 2px rgb(9, 66, 33);
-    width: 80%;
+    /* border: solid 2px rgb(9, 66, 33); */
+    width: 84%;
     height: 50%;
     margin: 10px;
-    padding: 5px;
+    padding: 1%;
 }
 
 .selectedCityCurrent {
-    /* border: solid 2px black; */
+    border: solid 2px black;
+}
+
+.fiveDayBox {
+    display: flex;
+    
 }
 
 #forecast {
+    
+}
 
+
+.day1 {
+    background-color: grey;
+    width: 10%;
+    height: 15%;
+    color:white;
+    padding: 7px;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px black;
+    margin: 20px;
+}
+
+.day2 {
+    background-color: grey;
+    width: 10%;
+    height: 15%;
+    color:white;
+    padding: 7px;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px black;
+    margin: 20px;
+}
+
+.day3 {
+    background-color: grey;
+    width: 10%;
+    height: 15%;
+    color:white;
+    padding: 7px;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px black;
+    margin: 20px;
+}
+
+.day4 {
+    background-color: grey;
+    width: 10%;
+    height: 15%;
+    color:white;
+    padding: 7px;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px black;
+    margin: 20px;
+}
+
+.day5 {
+    background-color: grey;
+    width: 10%;
+    height: 15%;
+    color:white;
+    padding: 7px;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px black;
+    margin: 20px;
 }
 
 .this {
