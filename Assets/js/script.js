@@ -1,57 +1,21 @@
-let apiOMDBKey = "749b1679"
-let apiKey = "5048323430d4a970a6bdd29c47c6b672"
 
-fetch(`http://api.openweathermap.org/geo/1.0/zip?zip=55301,US&appid=${apiKey}`)
+
+// search button
+document.getElementById("searchButton").addEventListener("click", searchResults);
+
+
+
+function searchResults() {
+    let apiKey = "5048323430d4a970a6bdd29c47c6b672";
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=estacada&appid=${apiKey}`)
 .then(response => response.json())
-.then(data =>{
+.then(latNlonData => {
+    return fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latNlonData[0].lat}&lon=${latNlonData[0].lon}&appid=${apiKey}`);
 
-    console.log(data);
-    (function () {
-        var old = console.log;
-        var logger = document.getElementById('weatherLog');
-        console.log = function (message) {
-            if (typeof message == 'object') {
-                logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
-            } else {
-                logger.innerHTML += message + '<br />';
-            }
-        }
-    })();
 })
-
-fetch(`http://www.omdbapi.com/?apikey=${apiOMDBKey}&t=last+samurai`)
 .then(response => response.json())
-.then(data =>{
-
-    console.log(data);
-    (function () {
-        var old = console.log;
-        var logger = document.getElementById('omdbLog');
-        console.log = function (message) {
-            if (typeof message == 'object') {
-                logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
-            } else {
-                logger.innerHTML += message + '<br />';
-            }
-        }
-    })();
+.then(cityData => {
+    console.log(cityData);
 })
-
-fetch(`https://www.loc.gov/search/?q=baseball&fo=json`)
-.then(response => response.json())
-.then(data =>{
-
-    console.log(data);
-    (function () {
-        var old = console.log;
-        var logger = document.getElementById('locLog');
-        console.log = function (message) {
-            if (typeof message == 'object') {
-                logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
-            } else {
-                logger.innerHTML += message + '<br />';
-            }
-        }
-    })();
-})
+}
 
