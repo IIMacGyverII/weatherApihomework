@@ -35,6 +35,14 @@ body {
     padding: 1%;
 }
 
+.currentConditions {
+    text-transform: capitalize;
+}
+
+.currentWind {
+    text-transform: capitalize;
+}
+
 .selectedCityCurrent {
     border: solid 2px black;
 }
