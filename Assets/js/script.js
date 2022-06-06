@@ -26,6 +26,7 @@ let searchButtonHandler = function (event) {
   };
   
   searchButton.addEventListener('click', searchButtonHandler);
+  searchButton.addEventListener('submit', searchButtonHandler);
   
 // Local Storage
   function createSearchHistory(citySearchInput) {
