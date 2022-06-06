@@ -103,7 +103,7 @@ function getLatLon(citySearchInput) {
 
 function getStateAndCountry(citySearchInput) {
   var apiUrl =
-    "http://api.openweathermap.org/geo/1.0/reverse?lat=" +
+    "https://api.openweathermap.org/geo/1.0/reverse?lat=" +
     lat +
     "&lon=" +
     lon +
