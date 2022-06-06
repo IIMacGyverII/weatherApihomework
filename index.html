@@ -16,7 +16,7 @@
         <section class="leftSideBar">
         <h1>Search for a City:</h1>
         <div class="input-group">
-            <input type="text" class="form-control enteredCity" placeholder="Enter City here" aria-label="" aria-describedby="basic-addon1" id="inputForm">
+            <input type="text" class="form-control enteredCity" placeholder="Enter City here" aria-label="" aria-describedby="basic-addon1" id="citySearchInput">
             <div class="input-group-append">
                 <button class="btn btn-success" id="searchButton" type="button">Search</button>
             </div>
@@ -25,22 +25,24 @@
         <section class="selectedCity">
             <section class="selectedCityCurrent">
                 <h1 class="currentCityName"></h1>
-                <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                <h4 id="currentDate"></h4>
+                <img src="" alt="" class="icon" />
                 <h4 class="currentTemp"></h4>
                 <h4 class="currentConditions"></h4>
                 <h4 class="currentWind"></h4>
                 <h4 class="currentHumidity"></h4>
-                <h4 class="uvIndex">UV Index: 0.47</h4>     
+                <h4 class="currentUV"></h4>     
             </section>
             <section id="forecast">
                 <h1>5-Day Forecast:</h1>            
                 <section class="fiveDayBox">  
                     <div class="day1">
-                        <h2 id="day1Date">3/31/2021</h2>
-                        <p id="day1Icon">icon</p>
-                        <p id="day1Temp">Temp: 73.72 F</p>
-                        <p id="day1Wind">Wind: 9.52 MPH</p>
-                        <p id="Day1Humidity">Humidity: 57%</p>
+                        <h2 id="day1Date"></h2>
+                        <img src="" alt="" class="day1Icon" />
+                        <p class="day1Conditions"></p>
+                        <p class="day1Temp">Temp: 73.72 F</p>
+                        <p class="day1Wind">Wind: 9.52 MPH</p>
+                        <p class="Day1Humidity">Humidity: 57%</p>
                     </div>
                     <div class="day2">
                         <h2 id="day2Date">3/31/2021</h2>
@@ -74,6 +76,10 @@
             </section>
         </section>
     </section>
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+  ></script>
 <script src="./Assets/js/script.js"></script>
 </body>
 </html>
