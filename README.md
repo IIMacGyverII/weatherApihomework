@@ -1,4 +1,4 @@
-# Project Title: React Portfolio
+# Project Title: Weather API
 ## Description:
     Create a personal weather app using JavaScript, HTML and openweatherAPI.
 ## What did you learn?
