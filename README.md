@@ -6,7 +6,7 @@
 ## Usage
     Enter a city in the search bar and get the weather!
 ## Link to view deployed project
-https://iimacgyverii.github.io/ReactPortfolio/#/
+https://iimacgyverii.github.io/weatherApihomework/
 ## ScreenShot
 ![Demo Video](https://github.com/IIMacGyverII/weatherApihomework/raw/main/ss_weatherAPI.png)
 ## Credit
