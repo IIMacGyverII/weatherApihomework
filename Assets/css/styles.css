@@ -41,7 +41,15 @@ body {
     margin-top: 10px;
     box-shadow: 0px 0px 10px 2px black;
     background-color:#02aefe;
+    font-weight: bold;
+    text-transform: capitalize;
 }
+
+.custom-btn-search {
+    background-color: rgb(238, 11, 11);
+    color: var(--c-dblue);
+    font-weight: bold;
+  }
 
 .searchHistoryText {
     margin-top: 10px;
