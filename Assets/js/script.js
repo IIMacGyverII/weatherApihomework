@@ -146,8 +146,27 @@ function getWeatherData(citySearchInput) {
     if (response.ok) {
       response.json().then(function (weatherData) {
         console.log(weatherData);
-        document.querySelector(".currentUV").innerText =
-          "Current UV index: " + weatherData.current.uvi;
+        // document.querySelector(".currentUVIndexValue").innerText =
+        //   "Current UV index: " + weatherData.current.uvi;
+          let currentUVIndexEl = document.querySelector('#currentUV');
+          let currentUVIndex;
+          // set current uv info box
+          currentUVIndex = (weatherData.current.uvi);
+          currentUVIndexEl.innerHTML = "Current UV index: " + currentUVIndex;
+          if (currentUVIndex < 2.99) {
+            currentUVIndexEl.classList.add('low');
+            currentUVIndexEl.classList.remove('medium');
+            currentUVIndexEl.classList.remove('high');
+          } else if (currentUVIndex > 3 && currentUVIndex < 5.99) {
+            currentUVIndexEl.classList.add('medium');
+            currentUVIndexEl.classList.remove('low');
+            currentUVIndexEl.classList.remove('high');
+          } else {
+            currentUVIndexEl.classList.add('high');
+            currentUVIndexEl.classList.remove('low');
+            currentUVIndexEl.classList.remove('medium');
+          };
+          
         // day 1
         document.querySelector("#day1Date").innerText = day1;
         document.querySelector(".day1Icon").src =

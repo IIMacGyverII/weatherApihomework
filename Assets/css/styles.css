@@ -171,3 +171,26 @@ body {
     border-color: black;
 }
 
+#currentUV {
+    width:fit-content;;
+    border: solid 1px black;
+    border-radius: 10px;
+    font-weight: bold;
+    padding:1px;
+}
+
+.low {
+    background-color: green;
+    border-radius: .1em;
+  }
+  
+  .medium {
+    background-color: orange;
+    border-radius: .1em;
+  }
+  
+  .high {
+    background-color: red;
+    border-radius: .1em;
+  }
+  
