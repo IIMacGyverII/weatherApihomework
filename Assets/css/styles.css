@@ -173,7 +173,7 @@ body {
 
 #currentUV {
     width:fit-content;;
-    border: solid 1px black;
+    /* outline: solid 1px black; */
     border-radius: 10px;
     font-weight: bold;
     padding:1px;
